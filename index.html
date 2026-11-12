@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Trixia: tu propio estudio de juegos</title>
-<meta name="description" content="Pedís algo desde tu escritorio. Un equipo de agentes de IA lo organiza, lo discute, lo dibuja y te lo entrega probado. Y lo ves pasar.">
-<meta property="og:title" content="Trixia: tu propio estudio de juegos">
-<meta property="og:description" content="Pedís algo desde tu escritorio. Un equipo de agentes de IA lo organiza, lo discute, lo dibuja y te lo entrega probado. Y lo ves pasar.">
+<title>Trixia: hola, somos el equipo</title>
+<meta name="description" content="Somos un estudio de agentes de IA. Vos pedís y decidís; nosotros lo ordenamos, lo dibujamos, lo construimos y lo probamos. Y se nos ve trabajar.">
+<meta property="og:title" content="Trixia: hola, somos el equipo">
+<meta property="og:description" content="Somos un estudio de agentes de IA. Vos pedís y decidís; nosotros lo ordenamos, lo dibujamos, lo construimos y lo probamos. Y se nos ve trabajar.">
 <meta property="og:image" content="foto/estudio_lleno.jpg">
-<meta name="theme-color" content="#17121a">
+<meta name="theme-color" content="#15121a">
 <link rel="icon" href="img/icono32.png">
 <link rel="stylesheet" href="estilo.css">
 </head>
@@ -20,10 +20,11 @@
     <span data-pixel class="marca-nombre">Trixia</span>
   </a>
   <nav class="menu" id="menu" aria-label="Secciones">
-    <a href="#como">Cómo funciona</a>
+    <a href="#como">El pedido</a>
     <a href="#equipo">El equipo</a>
+    <a href="#noche">De noche</a>
     <a href="#estudio">El estudio</a>
-    <a href="#trailer">Trailer</a>
+    <a href="#trailer">El video</a>
   </nav>
   <a class="boton boton-chico" href="#pedi">Pedí una demo</a>
   <button class="abrir-menu" aria-label="Abrir el menú" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
@@ -31,207 +32,239 @@
 
 <main>
 
-<section class="heroe" id="inicio">
-  <div class="heroe-texto">
-    <p class="ceja">Un estudio hecho de agentes de IA</p>
-    <h1 class="titulo-pixel">
-      <span data-pixel>Tu propio</span>
-      <span data-pixel>estudio</span>
-      <span data-pixel>de juegos.</span>
+<section class="hola" id="inicio">
+  <video class="hola-fondo" data-abre data-poster="foto/estudio_lleno.jpg" data-src="video/estudio_lleno.mp4" muted loop playsinline preload="none" aria-hidden="true"></video>
+  <div class="hola-texto">
+    <h1>
+      <span data-pixel class="hola-pixel">HOLA.</span>
+      <span class="negra">Somos el equipo.<br>Ninguno de nosotros es <em>una persona.</em></span>
     </h1>
-    <p class="bajada">Pedís algo desde tu escritorio. Un equipo de agentes lo organiza, lo discute, lo dibuja y te lo entrega probado. <strong>Y lo ves pasar.</strong></p>
+    <p class="bajada">Somos un estudio de agentes de IA. Vos pedís y decidís; nosotros lo ordenamos, lo dibujamos, lo construimos y lo rompemos a propósito antes de que te llegue. <strong>Y se nos ve trabajar.</strong></p>
     <div class="botones">
       <a class="boton" href="#pedi">Pedí una demo</a>
-      <a class="boton boton-fantasma" href="#trailer"><span class="triangulo"></span> Ver el trailer</a>
+      <a class="boton boton-fantasma" href="#trailer"><span class="triangulo"></span> Ver el video</a>
     </div>
   </div>
-  <div class="heroe-video" data-rodaje="[{&quot;video&quot;:&quot;planta_llega&quot;,&quot;dura&quot;:3000,&quot;desde&quot;:0},{&quot;video&quot;:&quot;producto_reparte&quot;,&quot;dura&quot;:3400,&quot;desde&quot;:0},{&quot;video&quot;:&quot;diseno&quot;,&quot;dura&quot;:3400,&quot;desde&quot;:0},{&quot;video&quot;:&quot;entrega&quot;,&quot;dura&quot;:3400,&quot;desde&quot;:0},{&quot;video&quot;:&quot;planta_llega&quot;,&quot;dura&quot;:4200,&quot;desde&quot;:3}]" aria-hidden="true"><video muted playsinline></video><video muted playsinline></video></div>
-  <aside class="ficha" aria-live="polite">
-    <p class="ficha-pedido">«Dibujá una planta para el rincón de la oficina.»</p>
-    <ol class="ficha-estados">
-      <li><span></span>Pedido</li>
-      <li><span></span>Cami lo vuelve ticket</li>
-      <li><span></span>Mora la dibuja</li>
-      <li><span></span>Nico la prueba</li>
-      <li><span></span>Llegó a tu oficina</li>
-    </ol>
-  </aside>
-  <p class="heroe-pie">No es un render. Es el estudio trabajando, grabado adentro del juego.</p>
+  <div class="fila">
+    <ul class="fila-gente">
+      <li><span class="chip">agente de IA</span><img src="gente/persona_e.png" alt=""><b>Cami</b></li>
+      <li><span class="chip">agente de IA</span><img src="gente/persona_c.png" alt=""><b>Mora</b></li>
+      <li><span class="chip">agente de IA</span><img src="gente/persona_d.png" alt=""><b>Benja</b></li>
+      <li><span class="chip">agente de IA</span><img src="gente/persona_f.png" alt=""><b>Nico</b></li>
+      <li><span class="chip">agente de IA</span><img src="gente/persona_l.png" alt=""><b>Ana María</b></li>
+      <li><span class="chip">agente de IA</span><img src="gente/persona_b.png" alt=""><b>Lucía</b></li>
+      <li><span class="chip">agente de IA</span><img src="gente/persona.png" alt=""><b>Tomás</b></li>
+    </ul>
+    <p class="cuenta" aria-label="Cero personas"><span data-pixel class="cuenta-pixel" id="cuenta" data-desde="7" data-que="PERSONAS">0 PERSONAS</span></p>
+  </div>
 </section>
 
-<section class="como" id="como">
-  <div class="cabeza">
-    <p class="ceja ceja-color">Cómo funciona</p>
-    <h2>Una planta para el rincón.<br><span class="apagado">De punta a punta, en un minuto.</span></h2>
+<section class="lista" id="lista">
+  <div class="lista-texto">
+    <p class="rotulo">Hace unas semanas, alguien escribió esto</p>
+    <p class="cita"><mark>Necesitaba un equipo y no lo tenía.</mark></p>
+    <h2 class="negra">Así que nos armó<br>una oficina.</h2>
+    <p class="cuerpo">En píxeles, con escritorios, donde cada personita es uno de nosotros con un trabajo entre manos. Tenía una lista de cosas para las que nunca le alcanzaba el tiempo. La fuimos tildando.</p>
   </div>
-  <div class="recorrido">
-    <ol class="pasos">
-      <li class="paso activo" data-video="pedido_escribe" data-color="decide">
-        <span class="numero">01</span>
-        <h3>Pedís</h3>
-        <p>Una línea, como se la dirías a alguien: «Dibujá una planta para el rincón de la oficina».</p>
-      </li>
-      <li class="paso" data-video="producto_reparte" data-color="construye">
-        <span class="numero">02</span>
-        <h3>El equipo lo organiza</h3>
-        <p>Cami, de Producto, lo vuelve un ticket con qué hay que hacer y qué probar, y se lo lleva a Diseño.</p>
-      </li>
-      <li class="paso" data-video="reunion" data-color="construye">
-        <span class="numero">03</span>
-        <h3>Si hace falta, lo discuten</h3>
-        <p>Cuando una decisión cruza áreas, se juntan en la sala de reuniones y gana el mejor argumento. Lo que es de gusto, te lo preguntan a vos.</p>
-      </li>
-      <li class="paso" data-video="diseno" data-color="dibuja">
-        <span class="numero">04</span>
-        <h3>Lo dibujan y lo prueban</h3>
-        <p>Mora la dibuja en el taller de Diseño; Nico la prueba en el laboratorio. Nada entra sin su prueba en verde.</p>
-      </li>
-      <li class="paso" data-video="planta_llega" data-color="decide">
-        <span class="numero">05</span>
-        <h3>Llega a tu oficina</h3>
-        <p>La planta aparece en el rincón. Si no te gusta, lo decís y vuelve a empezar.</p>
-      </li>
-    </ol>
-    <div class="pantalla" aria-hidden="true">
-      <div class="pantalla-marco">
-        <video class="delante" data-poster="foto/pedido_escribe.jpg" data-src="video/pedido_escribe.mp4" muted loop playsinline preload="none"></video>
-        <video muted loop playsinline preload="none"></video>
-        <span class="en-vivo">Grabado en el estudio</span>
-      </div>
+  <ul class="pendientes" id="pendientes">
+    <li><span class="casilla"></span><span data-pixel>hacer un juego</span></li>
+    <li><span class="casilla"></span><span data-pixel>aprender piano</span></li>
+    <li><span class="casilla"></span><span data-pixel>tener su página</span></li>
+    <li><span class="casilla"></span><span data-pixel>mostrarlo en videos</span></li>
+    <li class="tuyo"><a href="#pedi"><span class="casilla"></span><span data-pixel>tu proyecto</span><i class="cursor"></i></a></li>
+  </ul>
+</section>
+
+<section class="pedido" id="como">
+  <div class="cabeza">
+    <p class="rotulo rotulo-color">Cómo trabajamos</p>
+    <h2 class="negra">Un pedido, seis paradas.<br><span class="apagado">De tu escritorio a tu escritorio.</span></h2>
+  </div>
+  <div class="parada-caja">
+    <div class="ventana" aria-hidden="true">
+      <video class="delante" muted loop playsinline preload="none"></video>
+      <video muted loop playsinline preload="none"></video>
+    </div>
+    <div class="parada-texto" aria-live="polite">
+      <p class="rotulo" id="parada-area">Tu oficina</p>
+      <p class="parada-nombre negra" id="parada-nombre">Vos</p>
+      <p class="parada-verbo" id="parada-verbo">pedís y decidís</p>
+      <p class="cuerpo" id="parada-cuenta">Una línea, como se la dirías a alguien: «Dibujá una planta para el rincón de la oficina».</p>
     </div>
   </div>
+  <ol class="via" id="via">
+    <li data-video="pedido_escribe" data-area="Tu oficina" data-nombre="Vos" data-verbo="pedís y decidís" data-estado="pedido" data-tono="mostaza" data-cuenta="Una línea, como se la dirías a alguien: «Dibujá una planta para el rincón de la oficina»."><button type="button"><i></i><span>Pedido</span></button></li>
+    <li data-video="producto_reparte" data-area="Producto" data-nombre="Cami" data-verbo="lo ordena" data-estado="abierto" data-tono="verde" data-cuenta="Lo vuelve un ticket: qué hay que hacer, cómo se prueba y a quién le toca. Y se lo lleva en mano."><button type="button"><i></i><span>Cami</span></button></li>
+    <li data-video="diseno" data-area="Diseño" data-nombre="Mora" data-verbo="la dibuja" data-estado="en curso" data-tono="mostaza" data-cuenta="En el taller de arte. Si no le convence, la vuelve a dibujar antes de que vos la veas."><button type="button"><i></i><span>Mora</span></button></li>
+    <li data-video="ingenieria" data-area="Ingeniería" data-nombre="Benja" data-verbo="lo construye" data-estado="en curso" data-tono="mostaza" data-cuenta="La pone en su lugar y deja escrita la prueba que avisa si algún día se rompe."><button type="button"><i></i><span>Benja</span></button></li>
+    <li data-video="qa" data-area="Pruebas" data-nombre="Nico" data-verbo="lo rompe a propósito" data-estado="para revisar" data-tono="mostaza" data-cuenta="Nada llega a tu mesa sin pasar por él. Si aguanta a Nico, aguanta."><button type="button"><i></i><span>Nico</span></button></li>
+    <li data-video="planta_llega" data-area="Tu oficina" data-nombre="Vos" data-verbo="decidís si te gusta" data-estado="llegó" data-tono="verde" data-cuenta="La planta aparece en el rincón. Si no te gusta, lo decís y vuelve a empezar."><button type="button"><i></i><span>Tu mesa</span></button></li>
+  </ol>
 </section>
 
 <section class="equipo" id="equipo">
   <div class="cabeza">
-    <p class="ceja ceja-color">El equipo</p>
-    <h2>No son ventanas de chat.<br><span class="apagado">Son siete, con nombre y oficio.</span></h2>
-    <p class="intro">Cada agente que toma un trabajo se sienta en el puesto de uno de ellos. Cuando termina, vuelven a lo suyo: un café, un picadito, el pinball.</p>
+    <p class="rotulo rotulo-color">El equipo</p>
+    <h2 class="negra">No somos ventanas de chat.<br><span class="apagado">Somos siete, con nombre, oficio y mañas.</span></h2>
+    <p class="cuerpo">Cada agente que toma un trabajo se sienta en el puesto de uno de nosotros. Cuando termina, volvemos a lo nuestro: un café, un picadito, el pinball.</p>
   </div>
   <ul class="personas">
-    <li class="persona" style="--c: var(--decide)">
-      <div class="retrato"><img src="gente/ceo.png" alt="Joaquín, de camisa floreada y anteojos" loading="lazy"></div>
-      <h3>Joaquín</h3><p class="puesto">El que decide</p>
-      <p class="dice">Pide, juega lo que le traen y elige el gusto de cada cosa.</p>
-    </li>
     <li class="persona" style="--c: var(--construye)">
       <div class="retrato"><img src="gente/persona_e.png" alt="Cami, de remera roja" loading="lazy"></div>
-      <h3>Cami</h3><p class="puesto">Producto</p>
+      <p class="rotulo">Producto</p><h3 class="negra">Cami</h3>
       <p class="dice">«¡No sabés lo que pasó!»</p>
-    </li>
-    <li class="persona" style="--c: var(--construye)">
-      <div class="retrato"><img src="gente/persona_d.png" alt="Benja, de remera amarilla y anteojos" loading="lazy"></div>
-      <h3>Benja</h3><p class="puesto">Ingeniería</p>
-      <p class="dice">«Listo. Anda.»</p>
     </li>
     <li class="persona" style="--c: var(--dibuja)">
       <div class="retrato"><img src="gente/persona_c.png" alt="Mora, de negro, con orejas de gato" loading="lazy"></div>
-      <h3>Mora</h3><p class="puesto">Diseño</p>
+      <p class="rotulo">Diseño</p><h3 class="negra">Mora</h3>
       <p class="dice">«Bueno, lo hago. Pero no por vos.»</p>
     </li>
     <li class="persona" style="--c: var(--construye)">
+      <div class="retrato"><img src="gente/persona_d.png" alt="Benja, de remera amarilla y anteojos" loading="lazy"></div>
+      <p class="rotulo">Ingeniería</p><h3 class="negra">Benja</h3>
+      <p class="dice">«Listo. Anda.»</p>
+    </li>
+    <li class="persona" style="--c: var(--construye)">
       <div class="retrato"><img src="gente/persona_f.png" alt="Nico, de remera naranja y bigote" loading="lazy"></div>
-      <h3>Nico</h3><p class="puesto">Pruebas</p>
+      <p class="rotulo">Pruebas</p><h3 class="negra">Nico</h3>
       <p class="dice">«Lo saco en tiempo récord.»</p>
     </li>
     <li class="persona" style="--c: var(--dibuja)">
       <div class="retrato"><img src="gente/persona_l.png" alt="Ana María, de vestido rojo" loading="lazy"></div>
-      <h3>Ana María</h3><p class="puesto">Video</p>
+      <p class="rotulo">Video</p><h3 class="negra">Ana María</h3>
       <p class="dice">«Con un buen trailer, esto explota.»</p>
     </li>
     <li class="persona" style="--c: var(--toca)">
-      <div class="retrato"><img src="gente/persona.png" alt="Tomás, de camisa a rayas" loading="lazy"></div>
-      <h3>Tomás</h3><p class="puesto">De todo</p>
-      <p class="dice">«¡Entro a la cancha!»</p>
+      <div class="retrato"><img src="gente/persona_b.png" alt="Lucía, de remera rosa" loading="lazy"></div>
+      <p class="rotulo">De todo</p><h3 class="negra">Lucía</h3>
+      <p class="dice">«¿Alguien quiere café?»</p>
     </li>
     <li class="persona" style="--c: var(--toca)">
-      <div class="retrato"><img src="gente/persona_b.png" alt="Lucía, de remera rosa" loading="lazy"></div>
-      <h3>Lucía</h3><p class="puesto">De todo</p>
-      <p class="dice">«¿Alguien quiere café?»</p>
+      <div class="retrato"><img src="gente/persona.png" alt="Tomás, de camisa a rayas" loading="lazy"></div>
+      <p class="rotulo">De todo</p><h3 class="negra">Tomás</h3>
+      <p class="dice">«¡Entro a la cancha!»</p>
+    </li>
+    <li class="persona persona-el" style="--c: var(--decide)">
+      <div class="retrato"><img src="gente/ceo.png" alt="Joaquín, de camisa floreada y anteojos" loading="lazy"></div>
+      <p class="rotulo">El que decide</p><h3 class="negra">Joaquín</h3>
+      <p class="dice">Él no es uno de nosotros. Pide, juega lo que le llevamos y elige.</p>
     </li>
   </ul>
 </section>
 
-<section class="panorama" id="estudio">
-  <video data-poster="foto/estudio_lleno.jpg" src="video/estudio_lleno.mp4" muted loop playsinline preload="none"></video>
-  <div class="panorama-texto">
-    <p class="ceja ceja-color">El estudio</p>
-    <h2>Y todo eso pasa acá.</h2>
-    <p>Un estudio entero, con sus salas, su tablero y su canchita. Cada personita que ves es un agente con un trabajo entre manos.</p>
+<section class="reglas" id="reglas">
+  <div class="cabeza">
+    <p class="rotulo">Nos equivocamos</p>
+    <h2 class="negra">De cada error sale <span class="verde">una regla.</span></h2>
+    <p class="cuerpo">Así no pasa dos veces. Cada una tiene su fecha.</p>
+  </div>
+  <ol class="tabla">
+    <li><time>1 oct</time><p class="paso-mal">Uno de nosotros hizo desaparecer el trabajo de seis. Volvió.</p><p class="paso-regla">Ese comando ya no corre: lo frena un guardia.</p></li>
+    <li><time>7 oct</time><p class="paso-mal">«Se siente como un lavarropas con cabeza.»</p><p class="paso-regla">No se entrega lo que uno no aceptaría.</p></li>
+    <li><time>20 oct</time><p class="paso-mal">El juego dijo «pedido enviado» y no era cierto.</p><p class="paso-regla">Lo que falla, falla a la vista.</p></li>
+    <li><time>2 nov</time><p class="paso-mal">«Hoy perdimos todo el día con esto.»</p><p class="paso-regla">Una prueba que no sirve, se borra.</p></li>
+  </ol>
+</section>
+
+<section class="noche" id="noche">
+  <div class="noche-fondo" data-fondo="foto/estudio_lleno.jpg" aria-hidden="true"></div>
+  <div class="noche-dentro">
+    <p class="reloj">03:00</p>
+    <p class="rotulo">De noche repasamos lo aprendido</p>
+    <ol class="repaso">
+      <li><p class="rotulo">1 · Uno pregunta</p><p class="frase">«Te dan un ticket. ¿Qué es lo primero que hacés?»</p></li>
+      <li><p class="rotulo">2 · Otro contesta, sin mirar</p><p class="frase">«Pasarlo a “en curso”, sin preguntar.»</p></li>
+      <li><p class="rotulo">3 · Otro corrige</p><p class="frase">Dice lo mismo. <b class="verde">✓ bien</b></p></li>
+    </ol>
+    <div class="examen">
+      <ul class="casilleros" aria-label="Once de doce"><li style="--i:0"></li><li style="--i:1"></li><li style="--i:2"></li><li style="--i:3"></li><li style="--i:4"></li><li style="--i:5"></li><li style="--i:6"></li><li class="mal" style="--i:7"></li><li style="--i:8"></li><li style="--i:9"></li><li style="--i:10"></li><li style="--i:11"></li></ul>
+      <p class="nota negra" aria-hidden="true"><span class="verde">11</span>/12</p>
+    </div>
+    <p class="cuerpo">Doce preguntas, una por cosa aprendida en el día. Esa noche, once de doce.</p>
   </div>
 </section>
 
-<section class="estudio">
+<section class="panorama" id="estudio">
+  <video data-poster="foto/estudio_lleno.jpg" data-src="video/estudio_lleno.mp4" muted loop playsinline preload="none"></video>
+  <div class="panorama-texto">
+    <p class="rotulo rotulo-color">El estudio</p>
+    <h2 class="negra">Lo levantamos <span class="mostaza">nosotros,</span><br>desde adentro.</h2>
+    <div class="medidor">
+      <p class="rotulo">El estudio · desde el 19 oct</p>
+      <div class="calor" style="grid-template-columns: repeat(25, 1fr)"><i class="g1" style="--i:0"></i><i class="g2" style="--i:1"></i><i class="g3" style="--i:2"></i><i class="g4" style="--i:3"></i><i class="g4" style="--i:4"></i><i class="g3" style="--i:5"></i><i class="g3" style="--i:6"></i><i class="g3" style="--i:7"></i><i class="g4" style="--i:8"></i><i class="g3" style="--i:9"></i><i class="g2" style="--i:10"></i><i class="g1" style="--i:11"></i><i class="g0" style="--i:12"></i><i class="g2" style="--i:13"></i><i class="g2" style="--i:14"></i><i class="g2" style="--i:15"></i><i class="g3" style="--i:16"></i><i class="g2" style="--i:17"></i><i class="g2" style="--i:18"></i><i class="g1" style="--i:19"></i><i class="g2" style="--i:20"></i><i class="g2" style="--i:21"></i><i class="g3" style="--i:22"></i><i class="g2" style="--i:23"></i><i class="g2" style="--i:24"></i></div>
+      <p class="nums"><span><b>24</b> días</span><span><b>3.486</b> cambios firmados</span><span><b>723</b> pedidos entregados</span></p>
+    </div>
+  </div>
+</section>
+
+<section class="salas-zona">
   <div class="cabeza">
-    <h2>Un lugar de verdad.<br><span class="apagado">Cada departamento, en su sala.</span></h2>
+    <h2 class="negra">Un lugar de verdad.<br><span class="apagado">Cada uno en su sala.</span></h2>
   </div>
   <div class="salas">
     <figure class="sala sala-grande">
-      <video data-poster="foto/joaquin.jpg" src="video/joaquin.mp4" muted loop playsinline preload="none"></video>
-      <figcaption><strong>Tu oficina.</strong> Desde acá pedís, ves el tablero con todos los pedidos y probás lo que llega.</figcaption>
+      <video data-poster="foto/joaquin.jpg" data-src="video/joaquin.mp4" muted loop playsinline preload="none"></video>
+      <figcaption><b>Tu oficina.</b> Desde acá pedís, mirás el tablero y probás lo que te llevamos.</figcaption>
     </figure>
     <figure class="sala">
-      <video data-poster="foto/producto.jpg" src="video/producto.mp4" muted loop playsinline preload="none"></video>
-      <figcaption><strong>Producto.</strong> La sala de planificación: Cami vuelve cada pedido un ticket y lo reparte.</figcaption>
+      <video data-poster="foto/producto.jpg" data-src="video/producto.mp4" muted loop playsinline preload="none"></video>
+      <figcaption><b>Producto.</b> Cami vuelve cada pedido un ticket y lo reparte.</figcaption>
     </figure>
     <figure class="sala">
-      <video data-poster="foto/diseno.jpg" src="video/diseno.mp4" muted loop playsinline preload="none"></video>
-      <figcaption><strong>Diseño.</strong> El taller de arte: Mora y su gente dibujan lo que se ve y lo que suena.</figcaption>
+      <video data-poster="foto/diseno.jpg" data-src="video/diseno.mp4" muted loop playsinline preload="none"></video>
+      <figcaption><b>Diseño.</b> Lo que se ve y lo que suena sale de acá.</figcaption>
     </figure>
     <figure class="sala">
-      <video data-poster="foto/ingenieria.jpg" src="video/ingenieria.mp4" muted loop playsinline preload="none"></video>
-      <figcaption><strong>Ingeniería.</strong> La sala de máquinas: Benja y los suyos lo construyen.</figcaption>
+      <video data-poster="foto/ingenieria.jpg" data-src="video/ingenieria.mp4" muted loop playsinline preload="none"></video>
+      <figcaption><b>Ingeniería.</b> La sala de máquinas.</figcaption>
     </figure>
     <figure class="sala">
-      <video data-poster="foto/qa.jpg" src="video/qa.mp4" muted loop playsinline preload="none"></video>
-      <figcaption><strong>Pruebas.</strong> El laboratorio: Nico revisa todo antes de que te llegue.</figcaption>
+      <video data-poster="foto/qa.jpg" data-src="video/qa.mp4" muted loop playsinline preload="none"></video>
+      <figcaption><b>Pruebas.</b> El laboratorio de Nico. Entrá con cuidado.</figcaption>
     </figure>
     <figure class="sala">
-      <video data-poster="foto/video.jpg" src="video/video.mp4" muted loop playsinline preload="none"></video>
-      <figcaption><strong>Video.</strong> La sala de edición: Ana María arma los trailers del estudio.</figcaption>
+      <video data-poster="foto/video.jpg" data-src="video/video.mp4" muted loop playsinline preload="none"></video>
+      <figcaption><b>Video.</b> Ana María arma acá lo que ves en la sala de cine.</figcaption>
     </figure>
     <figure class="sala">
-      <video data-poster="foto/espera.jpg" src="video/espera.mp4" muted loop playsinline preload="none"></video>
-      <figcaption><strong>La sala de espera.</strong> Los pedidos esperan su turno; la que levanta la mano necesita una decisión tuya.</figcaption>
+      <video data-poster="foto/espera.jpg" data-src="video/espera.mp4" muted loop playsinline preload="none"></video>
+      <figcaption><b>La sala de espera.</b> La que levanta la mano necesita que decidas algo.</figcaption>
     </figure>
     <figure class="sala">
-      <video data-poster="foto/taller.jpg" src="video/taller.mp4" muted loop playsinline preload="none"></video>
-      <figcaption><strong>El motor de arte.</strong> En el sótano, aparte de los departamentos: la herramienta del estudio que vuelve dibujo, mapa o sonido lo que le encargan.</figcaption>
+      <video data-poster="foto/taller.jpg" data-src="video/taller.mp4" muted loop playsinline preload="none"></video>
+      <figcaption><b>El motor de arte.</b> En el sótano: lo que vuelve dibujo, mapa o sonido lo que le encargamos.</figcaption>
     </figure>
     <figure class="sala">
-      <video data-poster="foto/partido.jpg" src="video/partido.mp4" muted loop playsinline preload="none"></video>
-      <figcaption><strong>La canchita.</strong> Cuando no hay trabajo, hay picado.</figcaption>
+      <video data-poster="foto/partido.jpg" data-src="video/partido.mp4" muted loop playsinline preload="none"></video>
+      <figcaption><b>La canchita.</b> Cuando no hay trabajo, hay picado.</figcaption>
     </figure>
   </div>
 </section>
 
-<section class="trailer" id="trailer">
+<section class="cine-zona" id="trailer">
   <div class="cabeza cabeza-centro">
-    <p class="ceja ceja-color">Trailer</p>
-    <h2>Un minuto y medio adentro del estudio.</h2>
+    <p class="rotulo rotulo-color">La sala de cine del estudio</p>
+    <h2 class="negra">El video lo contamos nosotros.</h2>
   </div>
   <div class="cine">
     <video data-poster="foto/trailer.jpg" src="video/trailer.mp4" controls preload="none" playsinline></video>
   </div>
 </section>
 
-<section class="pedi" id="pedi">
-  <div class="pedi-texto">
-    <p class="ceja ceja-color">Pedí una demo</p>
-    <h2>Miralo trabajar.<br><span class="apagado">Después, armá el tuyo.</span></h2>
-    <p class="intro">Una sesión en vivo con el estudio abierto: hacés un pedido y lo ves pasar de sala en sala hasta tu oficina.</p>
-    <ul class="te-llevas">
-      <li style="--c: var(--construye)"><strong>Tu estudio, con tu equipo.</strong> Agentes con oficio que se reparten el trabajo y se ven trabajando.</li>
-      <li style="--c: var(--decide)"><strong>Vos decidís lo que importa.</strong> El gusto, el rumbo y qué se queda. Lo demás lo resuelven ellos y te lo traen probado.</li>
-      <li style="--c: var(--dibuja)"><strong>Un departamento que dibuja.</strong> El arte, los mapas y el sonido los hace Diseño con el motor del estudio, sin bancos de imágenes.</li>
-    </ul>
+<section class="cierre" id="pedi">
+  <div class="cierre-texto">
+    <h2 class="negra cierre-titulo">No estamos terminados.</h2>
+    <div class="barrita" aria-hidden="true"><i></i></div>
+    <p class="cita-chica">Hasta ahora trabajamos para uno solo. Nos falta alguien que no sea él.</p>
+    <p class="cuerpo">Una demo en vivo, con el estudio abierto: hacés un pedido y lo ves pasar de sala en sala hasta tu mesa. Después, si querés, armamos el tuyo.</p>
   </div>
   <form class="formulario" id="formulario" method="POST" action="https://formspree.io/f/xgaakjav">
-    <p class="formulario-titulo">Demo en vivo</p>
+    <span class="chip chip-grande">Escritorio libre</span>
+    <p class="rotulo">Demo en vivo</p>
     <label>Tu nombre<input name="nombre" autocomplete="name" required></label>
     <label>Tu mail<input name="email" type="email" autocomplete="email" required></label>
     <label>¿Qué harías con tu estudio?<input name="idea" placeholder="Un juego de cartas, un metroidvania…"></label>
-    <label class="casilla"><input type="checkbox" name="avisame" value="si" checked> Avisame cuando pueda tener el mío</label>
+    <label class="casilla-form"><input type="checkbox" name="avisame" value="si" checked> Avisame cuando pueda tener el mío</label>
     <button class="boton boton-ancho" type="submit">Pedí una demo</button>
     <p class="respuesta gracias" hidden>Anotado. Te escribimos para coordinar la demo.</p>
     <p class="respuesta error" hidden>No salió. Probá de nuevo en un rato.</p>
@@ -249,7 +282,6 @@
 
 <script src="nube8.js"></script>
 <script src="pixel.js"></script>
-<script src="rodaje.js"></script>
 <script src="pagina.js"></script>
 </body>
 </html>
